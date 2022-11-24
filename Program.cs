@@ -27,9 +27,9 @@ namespace replace_line_breaks_in_c_sharp
             System.Diagnostics.Debug.WriteLine("[debug] result: " + AssertEquals("a<br>b<br>c<br>d", output));
         }
 
-        private static string AssertEquals(string expacted, string actual)
+        private static string AssertEquals(string expected, string actual)
         {
-            return expacted.Equals(actual) ? "ok" : "ng";
+            return expected.Equals(actual) ? "ok" : "ng";
         }
     }
 }
